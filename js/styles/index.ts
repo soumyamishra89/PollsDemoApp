@@ -14,7 +14,8 @@ const styles = StyleSheet.create({
     },
     button: {
         marginHorizontal: 16,
-        backgroundColor: colors.primary
+        backgroundColor: colors.primary,
+        marginBottom: 16
     },
     disabledButton: {
         backgroundColor: colors.disabled
