@@ -308,7 +308,6 @@ exports[`QuestionDetailsComponent Snapshot test With question data 1`] = `
                 "textAlign": "left",
               },
               Array [
-                undefined,
                 false,
               ],
             ]
@@ -425,7 +424,6 @@ exports[`QuestionDetailsComponent Snapshot test With question data 1`] = `
                 "textAlign": "left",
               },
               Array [
-                undefined,
                 false,
               ],
             ]
@@ -542,7 +540,6 @@ exports[`QuestionDetailsComponent Snapshot test With question data 1`] = `
                 "textAlign": "left",
               },
               Array [
-                undefined,
                 false,
               ],
             ]
@@ -659,7 +656,6 @@ exports[`QuestionDetailsComponent Snapshot test With question data 1`] = `
                 "textAlign": "left",
               },
               Array [
-                undefined,
                 false,
               ],
             ]
