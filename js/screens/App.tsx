@@ -19,6 +19,7 @@ import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
 import store from '../services/redux/store';
 import QuestionsScreen from './questionlist/QuestionsScreen';
+import QuestionDetailsScreen from './questiondetails/QuestionDetailsScreen';
 
 const Stack = createStackNavigator();
 
@@ -28,6 +29,7 @@ const App = () => {
       <NavigationContainer>
         <Stack.Navigator headerMode="none">
           <Stack.Screen name="QuestionsScreen" component={QuestionsScreen} />
+          <Stack.Screen name="QuestionDetailsScreen" component={QuestionDetailsScreen} />
         </Stack.Navigator>
       </NavigationContainer>
     </Provider>

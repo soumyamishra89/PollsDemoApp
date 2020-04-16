@@ -30,8 +30,8 @@ async function postPollQuestion(newQuestion: CreatePollQuestion) {
 /**
  * Return true if successfully voted 
  */
-async function voteOnAChoice(questionId: string, choiceId: string) {
-    const resp = await fetch(`https://polls.apiblueprint.org/questions/${questionId}/choices/${choiceId}`, { method: 'POST' });
+async function voteOnAChoice(choiceUrl: string) {
+    const resp = await fetch(`https://polls.apiblueprint.org${choiceUrl}`, { method: 'POST' });
     if (resp.status === 201) {
         return true;
     }
