@@ -56,7 +56,13 @@ function depthFirstSearch(dataItem: any[] | any, input: string): boolean {
 	return dataItemCopy.some((item: any) => depthFirstSearch(item, input));
 }
 
+function getPercentageAsString(part: number, total: number) {
+	// divide by 1 in case total votes is 0
+	return (part / (total || 1) * 100).toFixed(2) + "%";
+}
+
 export default {
     debounce,
-	searchInDataObject
+	searchInDataObject,
+	getPercentageAsString
 };
