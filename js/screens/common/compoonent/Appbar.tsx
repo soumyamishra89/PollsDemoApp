@@ -1,6 +1,7 @@
 import React from 'react';
 import { Appbar as AppbarPaper, Searchbar } from 'react-native-paper';
 import utils from '../../../services/utils';
+import colors from '../../../styles/colors';
 
 interface Props {
     title: string,
@@ -43,7 +44,7 @@ export default class Appbar extends React.Component<Props, State> {
 
     render() {
       return (
-        <AppbarPaper.Header>
+        <AppbarPaper.Header style={{backgroundColor: colors.primary}}>
             {this.state.isSearchEnabled ?  
             <Searchbar
                 style={{flex: 1}}
