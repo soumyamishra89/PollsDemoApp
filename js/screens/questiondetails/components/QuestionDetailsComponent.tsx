@@ -34,28 +34,11 @@ export default function QuestionDetailsComponent(props: Props) {
     return (
         <View style={[Styles.matchParent, {paddingBottom: inset.bottom}]}>
             <Appbar title="Poll Question"/>
-            <View style={styles.contentContainer}>
+            <View style={Styles.contentContainer}>
                 <QuestionComponent question={props.pollQuestion?.question || ''} publishedDate={props.pollQuestion?.published_at.split('T')[0] || ''}/>
                 <ChoicesComponent choices={props.pollQuestion?.choices || []} totalVotes={props.pollQuestion?.totalVotes || 0} selectedChoice={selectedChoice} onChoiceChange={setSelectedChoice}/>
-                <Button mode="contained" onPress={onVote} disabled={!selectedChoice} style={[styles.button, !selectedChoice && styles.disabledButton]} loading={loading}>Vote</Button>
             </View>
+            <Button mode="contained" onPress={onVote} disabled={!selectedChoice} style={[Styles.button, !selectedChoice && Styles.disabledButton]} loading={loading}>Vote</Button>
         </View>
     )
 }
-
-const styles = StyleSheet.create({
-   contentContainer: {
-       paddingHorizontal: 16,
-       flex: 1
-    },
-    button: {
-        position: 'absolute',
-        bottom: 16,
-        left: 16,
-        right: 16,
-        backgroundColor: colors.primary
-    },
-    disabledButton: {
-        backgroundColor: colors.disabled
-    }
-})
