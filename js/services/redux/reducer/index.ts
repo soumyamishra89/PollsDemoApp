@@ -1,10 +1,12 @@
 import { combineReducers } from "redux";
 import { 
-   pollQuestionsReducer
+   pollQuestionsReducer,
+   errorMessageReducer
 } from './reducers';
 
 const appReducer = combineReducers({
-    pollQuestions: pollQuestionsReducer
+    pollQuestions: pollQuestionsReducer,
+    errorMessage: errorMessageReducer
 });
 
 export default appReducer;
