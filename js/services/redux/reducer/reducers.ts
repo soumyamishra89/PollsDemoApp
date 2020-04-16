@@ -8,7 +8,7 @@ function pollQuestionsReducer(state: PollQuestion[] = [], action: ReduxAction) {
             if (pollQuestions) {
                 pollQuestions = pollQuestions.map((pollQuestion: any) => ({
                     ...pollQuestion,
-                    totalVotes: Array.isArray(pollQuestions.choices) ? pollQuestions.choices.reduce((totalVotes: number, choice: PollChoice) => totalVotes + choice.votes, 0) : 0
+                    totalVotes: Array.isArray(pollQuestion.choices) ? pollQuestion.choices.reduce((totalVotes: number, choice: PollChoice) => totalVotes + choice.votes, 0) : 0
                 }))
             }
             return pollQuestions;
