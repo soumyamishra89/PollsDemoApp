@@ -10,7 +10,6 @@ exports[`NewQuestionComponent Snapshot test With question data 1`] = `
         "width": "100%",
       },
       Object {
-        "borderWidth": 2,
         "paddingBottom": 20,
       },
     ]
@@ -1066,6 +1065,7 @@ exports[`NewQuestionComponent Snapshot test With question data 1`] = `
         "borderStyle": "solid",
         "borderWidth": 0,
         "elevation": 0,
+        "marginBottom": 16,
         "marginHorizontal": 16,
         "minWidth": 64,
       }
