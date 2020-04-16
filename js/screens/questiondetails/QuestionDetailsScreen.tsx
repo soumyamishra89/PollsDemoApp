@@ -12,11 +12,7 @@ interface Props extends NavigationProps {
     getPollQuestions: () => void,
 }
 
-interface State {
-
-}
-
-class QuestionDetailsScreen extends React.Component<Props, State> {
+class QuestionDetailsScreen extends React.Component<Props> {
 
     postVote = async (choiceUrl: string) => {
         if (choiceUrl) {
