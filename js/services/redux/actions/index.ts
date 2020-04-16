@@ -1,7 +1,7 @@
 import { PollQuestion } from "../../../data/types/PollsData";
-import { ReduxActionType } from "js/data/types/Redux";
+import { ReduxActionType } from "../../../data/types/Redux";
 
-export function getQuestionsAction(data: PollQuestion[]) {
+export function getPollQuestionsAction(data: PollQuestion[]) {
     return {
         type: ReduxActionType.POLL_QUESTION,
         data
