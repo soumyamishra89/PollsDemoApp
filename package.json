@@ -54,7 +54,7 @@
       "node"
     ],
     "transformIgnorePatterns": [
-      "node_modules/(?!react-native|@react-navigation/native|@react-navigation/stack|@react-native-community/masked-view/)"
+      "node_modules/(?!react-native|@react-navigation/.*|@react-native-community/masked-view/)"
     ]
   }
 }
