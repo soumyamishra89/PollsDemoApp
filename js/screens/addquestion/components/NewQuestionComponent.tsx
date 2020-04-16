@@ -34,7 +34,7 @@ export default function NewQuestionComponent(props: Props) {
     const inset = useSafeArea();
     
     return (
-        <View style={[Styles.matchParent, {paddingBottom: inset.bottom, borderWidth: 2}]}>
+        <View style={[Styles.matchParent, {paddingBottom: inset.bottom}]}>
             <Appbar title="New Qeestion" />
             <ScrollView style={Styles.contentContainer} contentContainerStyle={{flex: 1}}>
                 <TextInput
