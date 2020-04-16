@@ -18,7 +18,7 @@ export default function RadioButton(props: Props) {
                 <RadioButtonPaper.Android value={props.value} color={"#3C7AFF"} uncheckedColor="#BFD3FE"/>
                 <Text style={[props.isActive && styles.textActive]}>{props.value}</Text>
             </View>
-            <Text style={[props.isActive && styles.textActive]}>{props.subtext}</Text>
+            <Text style={[{marginRight: 8}, props.isActive && styles.textActive]}>{props.subtext}</Text>
         </View>
     )
 }
@@ -30,8 +30,7 @@ const styles = StyleSheet.create({
         flexDirection: 'row',
         justifyContent: 'space-between',
         alignItems: 'center',
-        marginVertical: 8,
-        paddingRight: 8
+        marginVertical: 8
     },
     textAndButtonContainer: {
         backgroundColor: 'transparent',
