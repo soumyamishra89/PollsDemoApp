@@ -137,6 +137,6 @@ export const mockQuestions = [
                 "url": "/questions/1/choices/1"
             }
         ],
-        "totalVotes": 41
+        "totalVotes": 49
     }
 ]
