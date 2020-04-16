@@ -18,7 +18,7 @@ import { Provider } from 'react-redux';
 import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
 import store from '../services/redux/store';
-import QuestionsScreen from './questionlist/components/QuestionsScreen';
+import QuestionsScreen from './questionlist/QuestionsScreen';
 
 const Stack = createStackNavigator();
 

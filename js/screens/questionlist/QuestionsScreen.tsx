@@ -1,12 +1,10 @@
 import React from 'react';
-import { View } from 'react-native';
 import { ThunkDispatch } from 'redux-thunk';
 import { connect } from 'react-redux';
-import { NavigationProps, PollQuestionsProps } from '../../../data/types/ScreenProps';
-import styles from '../../../styles';
-import { AppState } from '../../../data/types/Redux';
-import api from '../../../services/remote/api';
-import QuestionListComponent from './QuestionListComponent';
+import { NavigationProps, PollQuestionsProps } from '../../data/types/ScreenProps';
+import { AppState } from '../../data/types/Redux';
+import api from '../../services/remote/api';
+import QuestionListComponent from './components/QuestionListComponent';
 
 interface Props extends NavigationProps, PollQuestionsProps {
     getPollQuestions: () => void
