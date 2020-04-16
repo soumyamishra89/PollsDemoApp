@@ -16,6 +16,15 @@ function pollQuestionsReducer(state: PollQuestion[] = [], action: ReduxAction) {
     }
 }
 
+function errorMessageReducer(state: string = '', action: ReduxAction) {
+    switch (action.type) {
+        case ReduxActionType.API_ERROR:            
+            return action.data;
+        default: return state;
+    }
+}
+
 export {
-    pollQuestionsReducer
+    pollQuestionsReducer,
+    errorMessageReducer
 }
