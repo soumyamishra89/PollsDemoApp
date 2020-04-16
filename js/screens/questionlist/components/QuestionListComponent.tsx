@@ -16,7 +16,7 @@ export default function QuestionListComponent(props: Props) {
     const goToQuestionDetailsScreen = (questionUrl: string) => props.navigation.navigate("QuestionDetailsScreen", { questionUrl })
 
     const renderFlatListItem = useCallback(({ item }: {item: PollQuestion}): any => {
-        return <Card title={item.question} action={() => goToQuestionDetailsScreen(item.url)} description={item.published_at.split('T')[0]} />;
+        return <Card title={item.question} action={() => goToQuestionDetailsScreen(item.url)} description={item.published_at.split('T')[0]} footerText={item.totalVotes.toString() + " votes"}/>;
     }, props.pollQuestions);
 
     const inset = useSafeArea();

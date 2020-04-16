@@ -2,7 +2,8 @@ export interface PollQuestion {
     question: string,
     published_at: string,
     url: string,
-    choices: PollChoice[]
+    choices: PollChoice[],
+    totalVotes: number
 }
 
 export interface PollChoice  {
