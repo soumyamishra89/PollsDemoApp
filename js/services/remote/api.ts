@@ -1,8 +1,8 @@
 import { Dispatch } from 'redux';
 import { getPollQuestionsAction, getApiErrorAction } from '../redux/actions';
-import { PollQuestion, CreatePollQuestion } from 'js/data/types/PollsData';
+import { CreatePollQuestion } from '../../data/types/PollsData';
 
-function getQuestions() {
+function getPollQuestions() {
     return async (dispatch: Dispatch) => {
         try {
             const resp = await fetch('https://polls.apiblueprint.org/questions');
@@ -19,7 +19,7 @@ function getQuestions() {
 /**
  * Return true if a new question is successfully posted
  */
-async function postQuestion(newQuestion: CreatePollQuestion) {
+async function postPollQuestion(newQuestion: CreatePollQuestion) {
     const resp = await fetch('https://polls.apiblueprint.org/questions', { method: "POST", body: newQuestion });
     if (resp.status === 201) {
         return true;
@@ -39,7 +39,7 @@ async function voteOnAChoice(questionId: string, choiceId: string) {
 }
 
 export default {
-    getQuestions,
-    postQuestion,
+    getPollQuestions,
+    postPollQuestion,
     voteOnAChoice
 }
