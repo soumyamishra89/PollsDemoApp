@@ -1,5 +1,5 @@
 import { Dispatch } from 'redux';
-import { getQuestionsAction, getApiErrorAction } from '../redux/actions';
+import { getPollQuestionsAction, getApiErrorAction } from '../redux/actions';
 import { PollQuestion, CreatePollQuestion } from 'js/data/types/PollsData';
 
 function getQuestions() {
@@ -8,7 +8,7 @@ function getQuestions() {
             const resp = await fetch('https://polls.apiblueprint.org/questions');
             if (resp.status === 200) {
                 const data = await resp.json();
-                return dispatch(getQuestionsAction(data));                
+                return dispatch(getPollQuestionsAction(data));                
             }
         } catch(err) {
         }
