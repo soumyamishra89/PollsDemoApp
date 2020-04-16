@@ -7,7 +7,7 @@
  *
  * @format
  */
-// import 'react-native-gesture-handler';
+import 'react-native-gesture-handler';
 import React from 'react';
 import {
   StyleSheet,
@@ -20,6 +20,7 @@ import { createStackNavigator } from '@react-navigation/stack';
 import store from '../services/redux/store';
 import QuestionsScreen from './questionlist/QuestionsScreen';
 import QuestionDetailsScreen from './questiondetails/QuestionDetailsScreen';
+import AddNewQuestionScreen from './addquestion/AddNewQuestionScreen';
 
 const Stack = createStackNavigator();
 
@@ -30,6 +31,7 @@ const App = () => {
         <Stack.Navigator headerMode="none">
           <Stack.Screen name="QuestionsScreen" component={QuestionsScreen} />
           <Stack.Screen name="QuestionDetailsScreen" component={QuestionDetailsScreen} />
+          <Stack.Screen name="AddNewQuestionScreen" component={AddNewQuestionScreen} />
         </Stack.Navigator>
       </NavigationContainer>
     </Provider>

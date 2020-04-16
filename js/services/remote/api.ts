@@ -20,7 +20,7 @@ function getPollQuestions() {
  * Return true if a new question is successfully posted
  */
 async function postPollQuestion(newQuestion: CreatePollQuestion) {
-    const resp = await fetch('https://polls.apiblueprint.org/questions', { method: "POST", body: newQuestion });
+    const resp = await fetch('https://polls.apiblueprint.org/questions', { method: "POST", body: JSON.stringify(newQuestion) });
     if (resp.status === 201) {
         return true;
     }
