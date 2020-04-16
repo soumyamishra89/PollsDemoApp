@@ -11,7 +11,6 @@ Array [
           "flexDirection": "row",
           "justifyContent": "space-between",
           "marginVertical": 8,
-          "paddingRight": 8,
           "width": "100%",
         },
         Object {
@@ -131,6 +130,7 @@ Array [
               "textAlign": "left",
             },
             Array [
+              undefined,
               Object {
                 "color": "#3C7AFF",
               },
@@ -152,6 +152,9 @@ Array [
           },
           Array [
             Object {
+              "marginRight": 8,
+            },
+            Object {
               "color": "#3C7AFF",
             },
           ],
@@ -170,7 +173,6 @@ Array [
           "flexDirection": "row",
           "justifyContent": "space-between",
           "marginVertical": 8,
-          "paddingRight": 8,
           "width": "100%",
         },
         Object {
@@ -249,6 +251,7 @@ Array [
               "textAlign": "left",
             },
             Array [
+              undefined,
               false,
             ],
           ]
@@ -267,6 +270,9 @@ Array [
             "textAlign": "left",
           },
           Array [
+            Object {
+              "marginRight": 8,
+            },
             false,
           ],
         ]
@@ -284,7 +290,6 @@ Array [
           "flexDirection": "row",
           "justifyContent": "space-between",
           "marginVertical": 8,
-          "paddingRight": 8,
           "width": "100%",
         },
         Object {
@@ -363,6 +368,7 @@ Array [
               "textAlign": "left",
             },
             Array [
+              undefined,
               false,
             ],
           ]
@@ -381,6 +387,9 @@ Array [
             "textAlign": "left",
           },
           Array [
+            Object {
+              "marginRight": 8,
+            },
             false,
           ],
         ]
@@ -398,7 +407,6 @@ Array [
           "flexDirection": "row",
           "justifyContent": "space-between",
           "marginVertical": 8,
-          "paddingRight": 8,
           "width": "100%",
         },
         Object {
@@ -477,6 +485,7 @@ Array [
               "textAlign": "left",
             },
             Array [
+              undefined,
               false,
             ],
           ]
@@ -495,6 +504,9 @@ Array [
             "textAlign": "left",
           },
           Array [
+            Object {
+              "marginRight": 8,
+            },
             false,
           ],
         ]
@@ -517,7 +529,6 @@ Array [
           "flexDirection": "row",
           "justifyContent": "space-between",
           "marginVertical": 8,
-          "paddingRight": 8,
           "width": "100%",
         },
         Object {
@@ -596,6 +607,7 @@ Array [
               "textAlign": "left",
             },
             Array [
+              undefined,
               false,
             ],
           ]
@@ -614,6 +626,9 @@ Array [
             "textAlign": "left",
           },
           Array [
+            Object {
+              "marginRight": 8,
+            },
             false,
           ],
         ]
@@ -631,7 +646,6 @@ Array [
           "flexDirection": "row",
           "justifyContent": "space-between",
           "marginVertical": 8,
-          "paddingRight": 8,
           "width": "100%",
         },
         Object {
@@ -710,6 +724,7 @@ Array [
               "textAlign": "left",
             },
             Array [
+              undefined,
               false,
             ],
           ]
@@ -728,6 +743,9 @@ Array [
             "textAlign": "left",
           },
           Array [
+            Object {
+              "marginRight": 8,
+            },
             false,
           ],
         ]
@@ -745,7 +763,6 @@ Array [
           "flexDirection": "row",
           "justifyContent": "space-between",
           "marginVertical": 8,
-          "paddingRight": 8,
           "width": "100%",
         },
         Object {
@@ -824,6 +841,7 @@ Array [
               "textAlign": "left",
             },
             Array [
+              undefined,
               false,
             ],
           ]
@@ -842,6 +860,9 @@ Array [
             "textAlign": "left",
           },
           Array [
+            Object {
+              "marginRight": 8,
+            },
             false,
           ],
         ]
@@ -859,7 +880,6 @@ Array [
           "flexDirection": "row",
           "justifyContent": "space-between",
           "marginVertical": 8,
-          "paddingRight": 8,
           "width": "100%",
         },
         Object {
@@ -938,6 +958,7 @@ Array [
               "textAlign": "left",
             },
             Array [
+              undefined,
               false,
             ],
           ]
@@ -956,6 +977,9 @@ Array [
             "textAlign": "left",
           },
           Array [
+            Object {
+              "marginRight": 8,
+            },
             false,
           ],
         ]

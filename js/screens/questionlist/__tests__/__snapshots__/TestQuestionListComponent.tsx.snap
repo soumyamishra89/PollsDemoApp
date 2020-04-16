@@ -260,6 +260,141 @@ exports[`QuestionListComponent Snapshot test Empty list 1`] = `
   >
     <View />
   </RCTScrollView>
+  <View
+    pointerEvents="auto"
+    style={
+      Object {
+        "backgroundColor": "#3C7AFF",
+        "borderRadius": 28,
+        "bottom": 20,
+        "elevation": 6,
+        "margin": 16,
+        "opacity": 1,
+        "position": "absolute",
+        "right": 0,
+        "shadowColor": "#000000",
+        "shadowOffset": Object {
+          "height": 5,
+          "width": 0,
+        },
+        "shadowOpacity": 0.24,
+        "shadowRadius": 6,
+        "transform": Array [
+          Object {
+            "scale": 1,
+          },
+        ],
+      }
+    }
+  >
+    <View
+      accessibilityRole="button"
+      accessible={true}
+      focusable={true}
+      onClick={[Function]}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      style={
+        Array [
+          Object {
+            "overflow": "hidden",
+          },
+          Object {
+            "borderRadius": 28,
+          },
+        ]
+      }
+    >
+      <View
+        pointerEvents="none"
+        style={
+          Array [
+            Object {
+              "alignItems": "center",
+              "flexDirection": "row",
+              "justifyContent": "center",
+            },
+            Object {
+              "height": 56,
+              "width": 56,
+            },
+          ]
+        }
+      >
+        <View
+          style={
+            Array [
+              Object {
+                "alignItems": "center",
+                "justifyContent": "center",
+              },
+              Object {
+                "height": 24,
+                "width": 24,
+              },
+            ]
+          }
+        >
+          <View
+            style={
+              Object {
+                "bottom": 0,
+                "left": 0,
+                "opacity": 1,
+                "position": "absolute",
+                "right": 0,
+                "top": 0,
+                "transform": Array [
+                  Object {
+                    "rotate": "0deg",
+                  },
+                ],
+              }
+            }
+          >
+            <Text
+              accessibilityElementsHidden={true}
+              allowFontScaling={false}
+              importantForAccessibility="no-hide-descendants"
+              pointerEvents="none"
+              style={
+                Array [
+                  Object {
+                    "color": "#ffffff",
+                    "fontSize": 24,
+                  },
+                  Array [
+                    Object {
+                      "transform": Array [
+                        Object {
+                          "scaleX": 1,
+                        },
+                      ],
+                    },
+                    Object {
+                      "backgroundColor": "transparent",
+                    },
+                  ],
+                  Object {
+                    "fontFamily": "Material Design Icons",
+                    "fontStyle": "normal",
+                    "fontWeight": "normal",
+                  },
+                  Object {},
+                ]
+              }
+            >
+              
+            </Text>
+          </View>
+        </View>
+      </View>
+    </View>
+  </View>
 </View>
 `;
 
@@ -629,7 +764,7 @@ exports[`QuestionListComponent Snapshot test With questions data 1`] = `
           ],
           "published_at": "2020-04-09T03:28:20.545996+00:00",
           "question": "Favourite programming language?",
-          "totalVotes": 41,
+          "totalVotes": 49,
           "url": "/questions/1",
         },
       ]
@@ -1714,7 +1849,7 @@ exports[`QuestionListComponent Snapshot test With questions data 1`] = `
                   ]
                 }
               >
-                41 votes
+                49 votes
               </Text>
             </View>
           </View>
@@ -1722,5 +1857,140 @@ exports[`QuestionListComponent Snapshot test With questions data 1`] = `
       </View>
     </View>
   </RCTScrollView>
+  <View
+    pointerEvents="auto"
+    style={
+      Object {
+        "backgroundColor": "#3C7AFF",
+        "borderRadius": 28,
+        "bottom": 20,
+        "elevation": 6,
+        "margin": 16,
+        "opacity": 1,
+        "position": "absolute",
+        "right": 0,
+        "shadowColor": "#000000",
+        "shadowOffset": Object {
+          "height": 5,
+          "width": 0,
+        },
+        "shadowOpacity": 0.24,
+        "shadowRadius": 6,
+        "transform": Array [
+          Object {
+            "scale": 1,
+          },
+        ],
+      }
+    }
+  >
+    <View
+      accessibilityRole="button"
+      accessible={true}
+      focusable={true}
+      onClick={[Function]}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      style={
+        Array [
+          Object {
+            "overflow": "hidden",
+          },
+          Object {
+            "borderRadius": 28,
+          },
+        ]
+      }
+    >
+      <View
+        pointerEvents="none"
+        style={
+          Array [
+            Object {
+              "alignItems": "center",
+              "flexDirection": "row",
+              "justifyContent": "center",
+            },
+            Object {
+              "height": 56,
+              "width": 56,
+            },
+          ]
+        }
+      >
+        <View
+          style={
+            Array [
+              Object {
+                "alignItems": "center",
+                "justifyContent": "center",
+              },
+              Object {
+                "height": 24,
+                "width": 24,
+              },
+            ]
+          }
+        >
+          <View
+            style={
+              Object {
+                "bottom": 0,
+                "left": 0,
+                "opacity": 1,
+                "position": "absolute",
+                "right": 0,
+                "top": 0,
+                "transform": Array [
+                  Object {
+                    "rotate": "0deg",
+                  },
+                ],
+              }
+            }
+          >
+            <Text
+              accessibilityElementsHidden={true}
+              allowFontScaling={false}
+              importantForAccessibility="no-hide-descendants"
+              pointerEvents="none"
+              style={
+                Array [
+                  Object {
+                    "color": "#ffffff",
+                    "fontSize": 24,
+                  },
+                  Array [
+                    Object {
+                      "transform": Array [
+                        Object {
+                          "scaleX": 1,
+                        },
+                      ],
+                    },
+                    Object {
+                      "backgroundColor": "transparent",
+                    },
+                  ],
+                  Object {
+                    "fontFamily": "Material Design Icons",
+                    "fontStyle": "normal",
+                    "fontWeight": "normal",
+                  },
+                  Object {},
+                ]
+              }
+            >
+              
+            </Text>
+          </View>
+        </View>
+      </View>
+    </View>
+  </View>
 </View>
 `;
