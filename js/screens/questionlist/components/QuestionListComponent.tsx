@@ -1,6 +1,6 @@
 import React, { useState, useCallback } from 'react';
 import { View, FlatList, StyleSheet } from 'react-native';
-import { FAB } from 'react-native-paper';
+import { FAB, ActivityIndicator } from 'react-native-paper';
 import { useSafeArea } from 'react-native-safe-area-context';
 import Styles from '../../../styles';
 import Appbar from '../../../screens/common/compoonent/Appbar';
@@ -8,6 +8,7 @@ import { PollQuestion } from '../../../data/types/PollsData';
 import { PollQuestionsProps, NavigationProps } from '../../../data/types/ScreenProps';
 import Card from '../../../screens/common/compoonent/Card';
 import colors from '../../../styles/colors';
+import NoQuestionsComponent from './NoQuestionsComponent';
 
 interface Props extends PollQuestionsProps, NavigationProps {}
 
@@ -26,20 +27,22 @@ export default function QuestionListComponent(props: Props) {
             footerText={item.totalVotes.toString() + " votes"}
             topStyle={{backgroundColor: colors.random[index % colors.random.length]}}
             />;
-    }, props.pollQuestions);
+    }, []);
 
     const inset = useSafeArea();
 
     return (
         <View style={[Styles.matchParent, {paddingBottom: inset.bottom}]} >
             <Appbar title="Poll Questions" enableSearch searchCallback={setSearchedQuestion} searchData={props.pollQuestions} />
-            <FlatList 
+            {props.pollQuestions ? props.pollQuestions.length === 0 ? 
+            <NoQuestionsComponent />
+            : <FlatList 
                 data={searchedQuestions || props.pollQuestions}
                 renderItem={renderFlatListItem}
                 keyExtractor={(item) => item.url}
                 style={styles.container}
                 showsVerticalScrollIndicator={false}
-            />
+            /> : <View style={[Styles.contentContainer, Styles.centerAligned]}><ActivityIndicator /></View>}
              <FAB
                 style={[styles.fab, {bottom: inset.bottom}]}
                 icon="plus"

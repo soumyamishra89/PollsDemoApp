@@ -10,7 +10,7 @@ const styles = StyleSheet.create({
     contentContainer: {
         marginTop: 16,
         paddingHorizontal: 16,
-        flex: 1
+        flex: 1,
     },
     button: {
         marginHorizontal: 16,
@@ -19,6 +19,10 @@ const styles = StyleSheet.create({
     },
     disabledButton: {
         backgroundColor: colors.disabled
+    },
+    centerAligned: {
+        justifyContent: 'center',
+        alignItems: 'center'
     }
 });
 
