@@ -12,6 +12,12 @@ describe("QuestionListComponent", () => {
 
         });
 
+        it("null questions list", () => {
+            const questionListTree = renderer.create(<QuestionListComponent pollQuestions={null} navigation={{}}/>).toJSON();
+            expect(questionListTree).toMatchSnapshot();
+
+        });
+
         it("With questions data", () => {
             const questionListTree = renderer.create(<QuestionListComponent pollQuestions={mockQuestions} navigation={{}}/>).toJSON();
             expect(questionListTree).toMatchSnapshot();
