@@ -8,8 +8,9 @@ describe("Test Redux reducers", () => {
         it("should return the new state", () => {
             expect(pollQuestionsReducer(undefined, getPollQuestionsAction(mockQuestions))).toEqual(mockQuestions);
         })
-        it("should return the empty state", () => {
-            expect(pollQuestionsReducer(undefined, {type: ReduxActionType.API_ERROR, data: undefined})).toEqual([]);
+        it("should return the previous state", () => {
+            expect(pollQuestionsReducer(undefined, {type: ReduxActionType.API_ERROR, data: undefined})).toEqual(undefined);
+            expect(pollQuestionsReducer([], {type: ReduxActionType.API_ERROR, data: undefined})).toEqual([]);
         })
     })
     describe("errorMessageReducer", () => {
