@@ -1,7 +1,7 @@
 import { PollQuestion } from "./PollsData";
 
 export interface AppState {
-    pollQuestions?: PollQuestion[],
+    pollQuestions: PollQuestion[] | null,
     errorMessage?: string
 }
 

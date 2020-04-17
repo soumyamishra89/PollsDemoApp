@@ -1,7 +1,7 @@
 import { PollQuestion, PollChoice } from "../../../data/types/PollsData";
 import { ReduxAction, ReduxActionType } from "../../../data/types/Redux";
 
-function pollQuestionsReducer(state: PollQuestion[] | undefined, action: ReduxAction) {
+function pollQuestionsReducer(state: PollQuestion[] | null = null, action: ReduxAction) {
     switch (action.type) {
         case ReduxActionType.POLL_QUESTION:
             let pollQuestions = action.data || [];

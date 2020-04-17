@@ -7,5 +7,5 @@ export interface NavigationProps {
 }
 
 export interface PollQuestionsProps {
-    pollQuestions?: PollQuestion[]
+    pollQuestions: PollQuestion[] | null
 }
